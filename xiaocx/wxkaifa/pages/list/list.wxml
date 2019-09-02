@@ -1,0 +1,5 @@
+<!--pages/list/list.wxml-->
+<import src="../home/home.wxml"/>
+<template is="abc" data="{{name:666,age:777}}"></template>
+
+<include src="../home/home.wxml"/>

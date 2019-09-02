@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/shop/shop",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "text": "产品",
+        "pagePath": "pages/list/list",
+        "iconPath": "img/icon/nav-list.png",
+        "selectedIconPath": "img/icon/nav-listHL.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/shop/shop",
+        "iconPath": "img/icon/cart.png",
+        "selectedIconPath": "img/icon/cartHL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

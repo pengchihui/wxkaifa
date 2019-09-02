@@ -1,0 +1,96 @@
+<!--pages/users/user.wxml-->
+<view>
+
+   <text>基础语法</text>
+   <view wx:for="{{arr_obj}}">{{index}}---{{item.time}}</view>
+   <view wx:if="{{bool}}">dfe</view>
+   <view wx:else>154</view>
+   <text>模板</text>
+   <template name="bing">
+    <view>{{name}}----{{age}}</view>
+   </template>
+   <template is="bing" data="{{name:'king',age:18}}"></template>
+
+   <!-- <text>引用</text>
+   <include src="top.wxml"/>
+   <include src="footer.wxml"/> -->
+
+   <text>模块</text>
+   <wxs src="../../utils/test1.wxs" module="sy" />
+   <view wx:for='{{sy.list}}'>{{item.name}}</view>
+
+
+   <text>轮廓图</text> 
+   <swiper autoplay="true" interval="1000" indicator-dots="true" circular="true">
+      <swiper-item wx:for="{{imgUrls}}">
+        <image src="{{item}}"/>
+      </swiper-item>
+   </swiper>
+  <text>滚动视图</text>
+  <movable-area style="height: 150px; width: 300px; background: red;">
+    <movable-view style="height: 20px; width: 20px; background: blue;" direction="all"  inertia="true" x="50" bindchange="test">
+    </movable-view>
+ </movable-area>
+
+  <text>一些图标</text>
+  <view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view>
+<text>进度条</text>
+<progress percent="45" show-info="true"></progress>
+  
+<text>富文本</text>
+<rich-text>dfe</rich-text>
+
+<text>复选框</text>
+<checkbox-group bindchange="check">
+<checkbox value="123" checked="true" color="red" />
+<checkbox value="456" checked="true" color="red" />
+<checkbox value="789" checked="true" color="red" />
+</checkbox-group>
+<text>日期选择</text> 
+<picker mode="date" bindchange="test3">
+   日期:{{val}}
+</picker>
+<text>性别选择</text>
+<radio-group>
+ <radio color="grey"/>
+ <radio size="40"/>
+ <radio/>
+</radio-group>
+<text>清晰度</text>
+<slider></slider>
+<text>选择按钮</text>
+<switch></switch>
+
+<text>列表向右的箭头图标</text>
+
+<view class='arrow'></view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+

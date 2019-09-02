@@ -1,0 +1,18 @@
+<!--pages/list/list.wxml-->
+<swiper autoplay="true" interval="1000" indicator-dots="true" circular="true">
+  <swiper-item wx:for="{{img}}">
+    <image src="../../{{item}}" />
+  </swiper-item>
+</swiper>
+<scroll-view class="left" scroll-y bindtap="tab">
+  <view wx:for="{{classity}}" class="{{num==index?'on':''}}" data-index="{{index}}" data-value="{{item}}">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="right" scroll-y>
+  <view class="box" wx:for="{{products}}">
+    <navigator url="../details/details?pro={{item.bid}}">
+      <image src="../../{{item.img[0]}}"></image>
+      <view>{{item.tit}}</view>
+    </navigator>
+  </view>
+</scroll-view>

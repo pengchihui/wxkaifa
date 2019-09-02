@@ -1,0 +1,8 @@
+<!--pages/finds/find.wxml-->
+<view>
+<text>超链接</text>
+<navigator url="../mines/mine" data-mm="小夏">链接跳转页面</navigator>
+<text>地图</text>
+<map id="map" longitude="113.324520" latitude="23.099994" scale="30" show-compass="true" style="width: 100%; height: 300px;"></map>
+</view>
+

@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<template is="abc" data="{{...obj1}}"></template>
+{{msg}}
+<view class="{{cla}}" wx:if="{{bool}}">{{msg}}</view>
+<view wx:else>666</view>
+
+
+<checkbox checked="{{bool}}"> </checkbox>
+<text class="{{bool?cla:''}}">123456</text>
+{{num+3}}
+<view>{{arr[1]}}</view>
+<view>{{obj.name}}</view>
+
+<view wx:for="{{arr}}" wx:for-item="asd" >{{asd}}--{{index}}</view>
+
+<block wx:for="{{arr}}">
+  <view> {{index}} </view>
+  <view> {{item}} </view>
+</block>
+
+
+<template name="abc">
+  <view>
+    <text> Time: {{name}}  {{age}} </text>
+  </view>
+</template>
+
+<template is="abc" data="{{...obj}}"></template>
+
+
+
+<template is="abc" data="{{...obj2}}"></template>
+
+<wxs src="../test.wxs" module="qwe" />
+{{qwe.name}}

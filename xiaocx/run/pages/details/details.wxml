@@ -1,0 +1,71 @@
+<!--pages/details/details.wxml-->
+<!-- 轮廓图 -->
+<swiper autoplay="true" interval="1000" indicator-dots="true" circular="true">
+  <swiper-item wx:for="{{product.img}}">
+    <image src="../../{{item}}" />
+  </swiper-item>
+</swiper> 
+<!-- 详情 购物车-->
+<view class="details">
+  <view class="tit">{{product.tit}}</view>
+  <view class="pay">￥{{product.pay}}</view>
+  <view class="buy" bindtap="chun" data-bid="{{product.bid}}"  >+加入购物车</view>
+  <view class="num">
+    <view bindtap="add">+</view>
+    <input value="{{num}}" type="number"></input>
+    <view bindtap="jian">-</view>
+  </view>
+</view>
+<view class="dibu">
+总价:￥{{all}}
+<view wx:if="{{bool}}" class="buy">+加入购物车</view>
+</view>
+<view style=" clear:both">详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view><view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+<view>详情</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

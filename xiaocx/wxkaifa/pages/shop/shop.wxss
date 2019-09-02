@@ -1,0 +1,4 @@
+/* pages/shop/shop.wxss */
+.nav{ color:red;font-size:100rpx}
+.div_class{ color:blue}
+.bg{ background: #eee}

@@ -1,0 +1,43 @@
+<!--pages/shops/shop.wxml-->
+
+<view wx:if="{{bool}}">购物车里面还没有东西，请去逛逛</view>
+
+<view wx:else>
+  <view wx:for="{{products}}" class="box">
+    <view class="box_m">
+      <view class="choose" bindtap="choose" data-id="{{index}}">
+        <icon type="success" wx:if="{{item.choose}}"></icon>
+        <icon type="success" color="grey" wx:else></icon>
+      </view>
+      <image src="../../{{item.img}}"></image>
+      <view class="tit">{{item.tit}}</view>
+      <view class="pay">￥{{item.pay}}</view>
+      <view class="num">
+        <view bindtap="add" data-index="{{index}}">+</view>
+        <input value="{{item.num}}" type="number" disabled="true"></input>
+        <view bindtap="jian" data-index="{{index}}">-</view>
+      </view>
+      <view class="del" bindtap="delete" data-index="{{index}}">删除</view>
+    </view>
+  </view>
+  <view class="money">
+    <view class="choose" bindtap="choose_all">
+        <icon type="success" wx:if="{{choose_all}}"></icon>
+        <icon type="success" color="grey" wx:else></icon>
+         全选
+    </view>   
+    总价：{{sum}}
+    <view>去结算</view>
+  </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+

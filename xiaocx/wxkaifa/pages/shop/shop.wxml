@@ -1,0 +1,56 @@
+<!--pages/shop/shop.wxml-->
+
+<map id="map" longitude="100" latitude="100"></map>
+
+
+
+<video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+
+<radio-group>
+<radio />
+<radio />
+<radio />
+</radio-group>
+
+<slider />
+<switch></switch>
+
+<navigator url='../index/index'>跳转</navigator>
+
+<swiper circular="true" autoplay="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<icon type="warn" size="30"/>
+<progress percent="50" show-info />
+
+<rich-text nodes="{{nodes}}"></rich-text>
+
+<button size="mini" type='warn'>dianji</button>
+
+<checkbox></checkbox>
+<input type='text' class="bg" />
+
+<view class="section">
+  <view class="section__title">普通选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+
+<view hover-class="nav">123</view>
+<movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="0" y="0" direction="all">
+    </movable-view>
+  </movable-area>
+<scroll-view style="height: 200px;" scroll-y scroll-top="100">
+<view style='height:400px; background:blue'></view>
+  </scroll-view>
+

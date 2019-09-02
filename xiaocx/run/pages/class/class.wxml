@@ -1,0 +1,43 @@
+<!--pages/class/class.wxml-->
+<!-- 轮廓图 -->
+<swiper autoplay="true" interval="1000" indicator-dots="true" circular="true">
+  <swiper-item wx:for="{{img}}">
+    <image src="../../{{item}}" />
+  </swiper-item>
+</swiper> 
+
+<!-- 左边  类别   -->
+<scroll-view class="left" scroll-y bindtap="tab">
+  <view wx:for="{{classity}}" class="{{num==index?'on':''}}" data-index="{{index}}" data-lei="{{item}}" >{{item}}</view>
+</scroll-view>
+
+<!-- 右边 产品信息  -->
+<scroll-view class="right" scroll-y bindtap="tab">
+ <view class="box" wx:for="{{products}}">
+     <navigator url="../details/details?id={{item.bid}}">
+       <image src="../../{{item.img[0]}}"></image>
+       <view>{{item.tit}}</view>
+      </navigator>
+ </view>
+</scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

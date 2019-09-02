@@ -1,0 +1,51 @@
+<!--pages/users/show.wxml-->
+
+<view class="page">
+      <view class="section__ctn">
+        <image  src="../../img/tuo/tuo1.jpg"></image>
+          <view class="page_user">
+            <view class="page__title">库克夏</view>
+            <view class="page__desc"><text class="page_left">ID号:15465487956</text>  <text class="page_right" bindtap="tiao"></text></view>
+          </view>
+      </view>
+</view>
+
+
+<view class="page_list">
+  <view class="page_li">
+     <image src="../../img/user/user1/pro.png" lazy-load="true"></image>
+     <text>我的订单</text>
+     <text class="page_rr"></text>
+  </view>
+  <view class="page_li">
+     <image src="../../img/user/user1/save.png" lazy-load="true"></image>
+     <text>我的收藏</text>
+     <text class="page_rr"></text>
+  </view>
+  <view class="page_li">
+     <image src="../../img/user/user1/private.png" lazy-load="true"></image>
+     <text>修改个人资料</text>
+     <text class="page_rr"></text>
+  </view>
+   <view class="page_li">
+     <image src="../../img/user/user1/comment.png" lazy-load="true"></image>
+     <text>我的评论</text>
+     <text class="page_rr"></text>
+   </view>  
+   <view class="page_li">
+     <image src="../../img/user/user1/phone.png" lazy-load="true"></image>
+     <text>绑定手机</text>
+     <text class="page_rr"></text>
+  </view>
+  <view class="page_li">
+     <image src="../../img/user/user1/address.png" lazy-load="true"></image>
+     <text>管理收获地址</text>
+     <text class="page_rr"></text>
+  </view>
+</view>
+
+
+
+
+
+

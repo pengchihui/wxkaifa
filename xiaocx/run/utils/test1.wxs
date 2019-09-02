@@ -1,0 +1,10 @@
+module.exports = {
+  list: [
+    { name: "小狗" },
+    { name: "小欧" },
+    { name: "小雀" },
+    { name: "小溪" }
+  ]
+}
+
+

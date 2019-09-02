@@ -1,0 +1,74 @@
+/* pages/users/show.wxss */
+
+.page{
+ min-width: 750rpx;
+ height: 300rpx;
+
+}
+image{
+  width: 200rpx; height: 200rpx;
+  margin: 50rpx 0 50rpx 40rpx;
+  border-radius: 5%;
+  float: left
+}
+.page_user{
+  overflow: hidden;
+  padding-top: 50rpx;
+  font-size:50rpx;
+  color: rgb(19, 18, 18);
+  padding-left: 20rpx;
+  position: relative;
+}
+.page__title{
+  margin:20rpx 0 0 0; 
+  
+}
+.page__desc{
+  color: rgb(128, 126, 126);
+  font-size: 30rpx;
+  margin-top: 50rpx;
+  position: relative;
+}
+
+.page_right{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 1rpx solid #D1D1D1;
+  border-right: 1rpx solid #D1D1D1;
+  position: absolute;
+  right: 40rpx;
+  transform: rotate(45deg);
+  background: #ffffff;
+}
+.page_list{
+  min-width: auto;
+  height: auto;  
+}
+.page_li{
+  width: 750rpx;
+  height: 100rpx;
+  border-top: 1rpx solid #D1D1D1;
+  border-bottom: 1rpx solid #D1D1D1;
+  margin-bottom: 20rpx;
+  position: relative
+}
+.page_list image{
+ width: 50rpx;
+ height:50rpx;
+ margin: 25rpx;
+ float: left
+}
+.page_list text{
+  float: left;
+  line-height: 100rpx
+}
+.page_rr{
+   width: 20rpx;
+   height: 20rpx;
+   border-top: 1rpx solid #D1D1D1;
+   border-right: 1rpx solid #D1D1D1;
+   transform: rotate(45deg);
+   position: absolute;
+   right: 40rpx;
+   top: 40rpx;
+}

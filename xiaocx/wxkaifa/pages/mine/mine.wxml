@@ -1,0 +1,54 @@
+<!--pages/mine/mine.wxml-->
+{{msg}}
+<view bindtap='test2'>
+  <text catchtap='test'>点击</text>
+</view>
+<!-- catchtap不带冒泡的点击事件 -->
+<view animation="{{animationData}}"style="background:red;height:100rpx;width:100rpx" bindtap='turn' ></view>
+
+
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
+<view>123</view>
