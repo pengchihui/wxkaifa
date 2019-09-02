@@ -1,0 +1,22 @@
+<!--pages/finds/show.wxml-->
+
+<view class="page_all">
+  <view class="page_li" wx:for="{{books}}">
+      <image src="{{item.book_cover}}" ></image>
+      <view class="page_right">
+        <view >{{item.bookname}}</view>
+        <view class="topic" >最新:{{item.topic}}</view>
+        <button bindtap="download" data-it="{{item}}"> 下载</button>
+      </view>
+  </view>
+
+
+
+
+</view>
+
+
+
+
+
+

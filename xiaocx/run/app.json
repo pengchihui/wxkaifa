@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/finds/show",
     "pages/users/show",
     "pages/shops/shop",
     "pages/class/class",
@@ -12,10 +13,13 @@
     
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#dddddd",
     "navigationBarTitleText": "商城",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":20
+
   },
   "tabBar": {
     "color": "#000000",
@@ -34,8 +38,8 @@
         "selectedIconPath": "img/icon/nav-listHL.png"
       },
       {
-        "text": "发现",
-        "pagePath": "pages/finds/find",
+        "text": "下载",
+        "pagePath": "pages/finds/show",
         "iconPath": "img/faxiang.png",
         "selectedIconPath": "img/faxiang.png"
       },

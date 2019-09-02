@@ -1,0 +1,39 @@
+/* pages/finds/show.wxss */
+
+.page_all{
+ width: 750rpx;
+ height: auto;
+
+}
+.page_li{
+  padding: 20rpx;
+  overflow: hidden;
+}
+.page_li image{
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+}
+.page_right{
+   float: left;
+   padding: 15rpx;
+}
+
+.topic{
+  padding-top:15rpx;
+  font-size: 28rpx;
+  color: #535352
+}
+
+button{
+  float: left;
+  width:400rpx;
+  height: 100rpx;
+}
+
+
+
+
+
+
+

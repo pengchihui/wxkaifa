@@ -8,7 +8,8 @@ Page({
     products: null,
     bool: true,
     choose_all: true,
-    sum: 0
+    sum: 0,
+    len:'0'
     
   },
   add(event) {
@@ -89,7 +90,6 @@ Page({
     })
   },
   delete(event){
-
     var index = event.target.dataset.index
     var arr = this.data.products
     var that=this
@@ -107,18 +107,28 @@ Page({
                 data: arr             
               })
           console.log('用户点击取消')
+          that.chi()
         } else if (res.cancel) {
           console.log('用户点击取消')
         }
       }
     })
-    this.pay()
+  
+  },
+  chi(){
+    var arr = wx.getStorageSync('shop') || [];
+    var str=String(arr.length);
+    wx.setTabBarBadge({
+      index: 3,
+      text: str
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
     // console.log("页面加载")
+    this.chi();
   },
 
   /**
@@ -127,20 +137,21 @@ Page({
   onReady: function() {
 
     // console.log("页面渲染")
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+   
     // console.log("页面显示")
     var arr = wx.getStorageSync('shop') || []
     this.setData({
       bool: arr.length == 0 ? true : false,
       products: arr
     })
-   
+    this.chi()
     this.pay()
   },
 
