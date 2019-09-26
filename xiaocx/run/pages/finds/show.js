@@ -49,7 +49,7 @@ Page({
       },
       success(res) {
         var arr=res.data.data
-        console.log(arr)
+        // console.log(arr)
         that.setData({
           books:arr
         })
